@@ -1,9 +1,10 @@
-import GraphPdf from "./pages/Graph-pdf";
+import Page from "./pages/TableTranform";
 
 function App() {
   return (
     <div>
-      <GraphPdf />
+      <Page />
+      {/* <Button>Button</Button> */}
     </div>
   );
 }

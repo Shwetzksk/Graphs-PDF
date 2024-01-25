@@ -29,8 +29,8 @@ export function Bandwidth({ id, title, imgId }) {
       data: staticData.transmitted.map(
         (data, i) => (data + staticData.received[i]) / (1000 * 1000)
       ),
-      borderColor: "rgb(229, 122, 68)",
-      backgroundColor: "rgba(229, 122, 68, 0.5)",
+      borderColor: "rgb(0, 223, 162)",
+      backgroundColor: "rgb(0, 223, 162,0.2)",
       fill: true,
       borderWidth: 1,
       pointRadius: 1,
@@ -38,7 +38,7 @@ export function Bandwidth({ id, title, imgId }) {
   ];
 
   return (
-    <div className={`w-full h-80 ${imgId}`}>
+    <div className={`w-full h-60 ${imgId}`}>
       <LineGraph
         graphTitle={title}
         labels={staticData.time.map((time) => time * 1000)}

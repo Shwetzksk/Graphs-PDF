@@ -11,7 +11,7 @@ export default function App() {
   return (
     <section>
       <ViewPDFModal open={showPdf} onClose={() => setShowPdf(false)} />
-      <div className="flex justify-end gap-3 mx-3 my-4">
+      {/* <div className="flex justify-end gap-3 mx-3 my-4">
         <Button
           size="small"
           variant="contained"
@@ -25,9 +25,9 @@ export default function App() {
         <Button variant="outlined" size="small">
           <PDFDownloadLink />
         </Button>
-      </div>
+      </div> */}
 
-      {/* <ZoomviewGraphRender opacity={0} /> */}
+      <ZoomviewGraphRender />
     </section>
   );
 }
